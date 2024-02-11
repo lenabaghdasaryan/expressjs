@@ -3,7 +3,7 @@ import router from "./users-router.js";
 import JWT from 'jsonwebtoken';
 import { User } from '../models/user-model.js';
 
-const {SECRET} = process.env;
+const secret = 'bubu'
 
 router.post('/login', async (req,res)=> {
     try{
